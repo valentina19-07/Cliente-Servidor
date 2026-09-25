@@ -1,0 +1,45 @@
+﻿<!-- Navbar principal -->
+<header class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center fw-bold" routerLink="/">
+      <i class="bi bi-hdd-network-fill text-primary fs-4 me-2"></i>
+      <span>UCEVA Cliente-Servidor</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarsExample">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/productos" routerLinkActive="active text-white fw-bold">
+            <i class="bi bi-box-seam me-1"></i> Productos
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/clientes" routerLinkActive="active text-white fw-bold">
+            <i class="bi bi-people me-1"></i> Clientes
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/pedidos" routerLinkActive="active text-white fw-bold">
+            <i class="bi bi-cart-check me-1"></i> Pedidos
+          </a>
+        </li>
+      </ul>
+      <span class="badge bg-success-subtle text-success border border-success-subtle px-3 py-2">
+        <i class="bi bi-plug-fill me-1"></i> Backend: Express / Swagger (3000)
+      </span>
+    </div>
+  </div>
+</header>
+
+<!-- Main Router Outlet -->
+<main class="container my-4">
+  <router-outlet></router-outlet>
+</main>
+
+<footer class="bg-white border-top py-3 text-center text-muted small mt-auto">
+  <div class="container">
+    <span>Taller Cliente-Servidor | Desarrollado por Juan Fernando Vargas (Persona B) & Valentina González (Persona A)</span>
+  </div>
+</footer>
